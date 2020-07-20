@@ -20,7 +20,11 @@ void setup(){
   for(uint8_t pin=2; pin<=9; pin++)
     pinMode(pin, OUTPUT);
   
+  for(uint8_t pin=2; pin<=9; pin++)
+    pinMode(pin, HIGH);
+  
   pinMode(10, OUTPUT); // enable seven segment
+  digitalWrite(10, HIGH); // Turn off seven segment
 }
 
 void loop(){
