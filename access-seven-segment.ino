@@ -25,12 +25,12 @@ void setup(){
 
 void loop(){
   // Send number 3 to seven segment
-  digitalWrite(2, HIGH);
-  digitalWrite(2, LOW);
-  digitalWrite(2, HIGH);
-  digitalWrite(2, HIGH);
-  digitalWrite(2, LOW);
-  digitalWrite(2, LOW);
-  digitalWrite(2, LOW);
-  digitalWrite(2, LOW);
+  digitalWrite(2, HIGH); // H
+  digitalWrite(3, LOW); // G
+  digitalWrite(4, HIGH); // F
+  digitalWrite(5, HIGH); // E
+  digitalWrite(6, LOW); // D
+  digitalWrite(7, LOW); // C
+  digitalWrite(8, LOW); // B
+  digitalWrite(9, LOW); // A
 }
