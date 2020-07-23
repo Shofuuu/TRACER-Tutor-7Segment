@@ -54,17 +54,17 @@ void segment_select(uint8_t digit){
 }
 
 void segment_write(uint8_t number){
-  segment_select(0);
+  segment_select(1);
   segment_number(
     number/10
   );
-  delayMicroseconds(500);
+  delay(3);
 
-  segment_select(1);
+  segment_select(0);
   segment_number(
     number - ((number/10)*10)
   );
-  delayMicroseconds(500);
+  delay(3);
 }
 
 void setup() {
